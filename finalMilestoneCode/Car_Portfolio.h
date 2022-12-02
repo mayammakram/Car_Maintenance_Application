@@ -28,7 +28,6 @@ private:
 
 public:
     Car_Portfolio();
-    ~Car_Portfolio();
     void addCar(string, string, string, string, string, string, bool);
     void removeCar(string, string);
     void editCarInfo(string, string, bool);

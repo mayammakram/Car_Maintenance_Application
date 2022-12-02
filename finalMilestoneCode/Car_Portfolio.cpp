@@ -2,13 +2,8 @@
 
 Car_Portfolio::Car_Portfolio()
 {
+    int primaryCar = -1;
 }
-
-Car_Portfolio::~Car_Portfolio()
-{
-
-}
-
 void Car_Portfolio :: addCar(string brand, string model, string caregory, string color, string plateNum, string imgpath, bool isPrim){
     car x;
     x.brand = brand;
