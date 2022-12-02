@@ -2,7 +2,6 @@
 
 Car_Portfolio::Car_Portfolio()
 {
-    
 }
 
 Car_Portfolio::~Car_Portfolio()
@@ -37,5 +36,5 @@ void Car_Portfolio::editCarInfo(string Brand, string PlateNum, bool IsPrim){
             cars[i].plateNum = PlateNum;
             cars[i].isPrimary = IsPrim;
         }
-    }   
+    } 
 }
