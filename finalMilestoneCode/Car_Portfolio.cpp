@@ -21,6 +21,13 @@ void Car_Portfolio::removeCar(string Brand, string PlateNum){
     for (int i = 0; i < cars.size(); i++){
         if (cars[i].brand == Brand && cars[i].plateNum == PlateNum){
             cars.erase(cars.begin() + i);
+            if(cars[i].isPrimary){
+                primaryCar = 0;
+            }else{
+                if(primaryCar > i){
+                    primaryCar--;
+                }
+            }
         }
     }
 }
