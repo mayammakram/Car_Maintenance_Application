@@ -14,6 +14,7 @@ void Car_Portfolio :: addCar(string brand, string model, string caregory, string
     x.imgpath = imgpath;
     x.isPrimary = isPrim;
     cars.push_back(x);
+    if(isPrim){primaryCar = cars.size()-1;}
 }
 
 void Car_Portfolio::removeCar(string Brand, string PlateNum){
@@ -30,6 +31,7 @@ void Car_Portfolio::editCarInfo(string Brand, string PlateNum, bool IsPrim){
             cars[i].brand = Brand;
             cars[i].plateNum = PlateNum;
             cars[i].isPrimary = IsPrim;
+            if(IsPrim){primaryCar = i;}
         }
     } 
 }
