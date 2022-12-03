@@ -11,7 +11,7 @@ class client : public user
 private:
     Car_Portfolio carPortfolio;
     string address;
-    bool loggedin = false;
+    bool loggedin;
     //bookingsAgenda bookings;
 public:
     client(Car_Portfolio);

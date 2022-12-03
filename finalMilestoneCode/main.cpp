@@ -15,13 +15,12 @@ int main(){
 
     Car_Portfolio portfolio;
     client x(portfolio);
-    portfolio.addCar("Toyota", "Camry", "Sedan", "Black", "1234", "C:\\Users\\user\\Desktop\\car.jpg", true);
-    x.setCarPortfolio(portfolio);
     x.signUp("John", "1234", "minssss", "1234", "1234");
-    cout << endl;
     x.login("minssss", "1234");
     cout << endl;
     x.viewInfo();
     cout << endl;
+    portfolio.addCar("Toyota", "Camry", "Sedan", "Black", "1234", "C:\\Users\\user\\Desktop\\car.jpg", true);
+    x.setCarPortfolio(portfolio);
     x.viewPortfolio();
 }
