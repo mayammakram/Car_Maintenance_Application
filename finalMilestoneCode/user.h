@@ -4,6 +4,8 @@
 using namespace std;
 #pragma once
 
+    //abstract class
+
 class user
 {
 protected:
@@ -21,3 +23,4 @@ public:
 };
 
 #endif
+

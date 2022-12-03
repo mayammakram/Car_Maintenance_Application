@@ -7,25 +7,16 @@ client::client(Car_Portfolio CarPortfolio)
     carPortfolio = CarPortfolio;
 }
 
-void client::viewPortfolio()
-{
-    carPortfolio.printCars();
-}
+void client::viewPortfolio(){carPortfolio.printCars();}
 
-Car_Portfolio client::getCarPortfolio()
-{
-    return carPortfolio;
-}
+Car_Portfolio client::getCarPortfolio(){return carPortfolio;}
 
 void client::setCarPortfolio(Car_Portfolio CarPortfolio)
 {
-    if(loggedin)
-    {
-        carPortfolio = CarPortfolio;
-    }else{
-        cout << "Please Login First"<<endl;
-    }
-    
+    if(loggedin){
+        carPortfolio = CarPortfolio;}
+    else{
+        cout << "Please Login First"<<endl;}
 }
 
 void client::login(string Email, string Password)
@@ -36,15 +27,10 @@ void client::login(string Email, string Password)
             loggedin = true;
             break;
         }
-        else
-        {
-            cout << "Login Failed" << endl;
-            i = i - 1;
-        }
+        else{
+            cout << "Login Failed" << endl; i = i - 1;}
     }
-    if ( i == 0){
-        cout << "You have exceeded the number of attempts" << endl;
-    }
+    if ( i == 0){cout << "You have exceeded the number of attempts" << endl;}
 }
 
 void client::signUp(string Name, string PhoneNumber, string Email, string Password, string Address)
