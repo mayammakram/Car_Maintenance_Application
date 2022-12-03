@@ -16,7 +16,6 @@ void Car_Portfolio :: addCar(string brand, string model, string caregory, string
     cars.push_back(x);
     if(isPrim){primaryCar = cars.size()-1;}
 }
-
 void Car_Portfolio::removeCar(string Brand, string PlateNum){
     for (int i = 0; i < cars.size(); i++){
         if (cars[i].brand == Brand && cars[i].plateNum == PlateNum){
@@ -26,12 +25,8 @@ void Car_Portfolio::removeCar(string Brand, string PlateNum){
             }else{
                 if(primaryCar > i){
                     primaryCar--;
-                }
-            }
-        }
-    }
+                }}}}
 }
-
 void Car_Portfolio::editCarInfo(string Brand, string PlateNum, bool IsPrim){
     for (int i = 0; i < cars.size(); i++){
         if (cars[i].brand == Brand && cars[i].plateNum == PlateNum){
@@ -39,10 +34,7 @@ void Car_Portfolio::editCarInfo(string Brand, string PlateNum, bool IsPrim){
             cars[i].plateNum = PlateNum;
             cars[i].isPrimary = IsPrim;
             if(IsPrim){primaryCar = i;}
-        }
-    } 
-}
-
+        }}}
 void Car_Portfolio::printCars(){
     for(auto x : cars){
         cout << x.brand << " " << x.model << " " << x.category << " " << x.color << " " << x.plateNum << " " << x.imgpath << " " << x.isPrimary << endl;
