@@ -8,7 +8,6 @@ using namespace std;
 #pragma once
 
 struct car{
-
     string brand;
     string model;
     string category;
@@ -16,7 +15,6 @@ struct car{
     string plateNum;
     string imgpath;
     bool isPrimary;
-    
 };
 
 class Car_Portfolio
@@ -31,6 +29,7 @@ public:
     void addCar(string, string, string, string, string, string, bool);
     void removeCar(string, string);
     void editCarInfo(string, string, bool);
+    void printCars();
 };
 
 #endif

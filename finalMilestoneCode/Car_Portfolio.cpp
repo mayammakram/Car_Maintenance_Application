@@ -33,3 +33,9 @@ void Car_Portfolio::editCarInfo(string Brand, string PlateNum, bool IsPrim){
         }
     } 
 }
+
+void Car_Portfolio::printCars(){
+    for(auto x : cars){
+        cout << x.brand << " " << x.model << " " << x.category << " " << x.color << " " << x.plateNum << " " << x.imgpath << " " << x.isPrimary << endl;
+    }
+}
